@@ -1,0 +1,58 @@
+File: api
+Build ID: 3f280790d2d668cc3e9463de2ddfc9c6a1a76077
+Type: inuse_space
+Time: 2026-06-03 22:10:49 MSK
+Showing nodes accounting for 20675.60kB, 100% of 20675.60kB total
+      flat  flat%   sum%        cum   cum%
+ 9233.51kB 44.66% 44.66% 13841.70kB 66.95%  l45/internal/generator.GenerateOrders
+ 3072.14kB 14.86% 59.52%  3072.14kB 14.86%  github.com/brianvoe/gofakeit/v7.uuid
+    2565kB 12.41% 71.92%     2565kB 12.41%  runtime.allocm
+ 1184.27kB  5.73% 77.65%  1184.27kB  5.73%  runtime/pprof.StartCPUProfile
+ 1024.04kB  4.95% 82.60%  1024.04kB  4.95%  strings.(*Builder).grow
+  521.05kB  2.52% 85.12%   521.05kB  2.52%  runtime/pprof.(*profMap).lookup
+     514kB  2.49% 87.61%      514kB  2.49%  bufio.NewReaderSize (inline)
+  513.31kB  2.48% 90.09%   513.31kB  2.48%  github.com/brianvoe/gofakeit/v7/data.map.init.17
+  512.16kB  2.48% 92.57%   512.16kB  2.48%  net/http.readRequest
+  512.08kB  2.48% 95.05%   512.08kB  2.48%  github.com/brianvoe/gofakeit/v7.addInternetLookup
+  512.02kB  2.48% 97.52%   512.02kB  2.48%  net.sockaddrToTCP
+  512.01kB  2.48%   100%   512.01kB  2.48%  github.com/brianvoe/gofakeit/v7.email
+         0     0%   100%      514kB  2.49%  bufio.NewReader (inline)
+         0     0%   100%   512.01kB  2.48%  github.com/brianvoe/gofakeit/v7.Email (inline)
+         0     0%   100%  1024.04kB  4.95%  github.com/brianvoe/gofakeit/v7.ProductName (inline)
+         0     0%   100%  3072.14kB 14.86%  github.com/brianvoe/gofakeit/v7.UUID (inline)
+         0     0%   100%   512.08kB  2.48%  github.com/brianvoe/gofakeit/v7.init.0
+         0     0%   100%   512.08kB  2.48%  github.com/brianvoe/gofakeit/v7.initLookup
+         0     0%   100%  1024.04kB  4.95%  github.com/brianvoe/gofakeit/v7.productName
+         0     0%   100%  1024.04kB  4.95%  github.com/brianvoe/gofakeit/v7.title
+         0     0%   100%   513.31kB  2.48%  github.com/brianvoe/gofakeit/v7/data.init
+         0     0%   100% 14353.72kB 69.42%  main.main
+         0     0%   100%   512.02kB  2.48%  net.(*TCPListener).Accept
+         0     0%   100%   512.02kB  2.48%  net.(*TCPListener).accept
+         0     0%   100%   512.02kB  2.48%  net.(*netFD).accept
+         0     0%   100%  1184.27kB  5.73%  net/http.(*ServeMux).ServeHTTP
+         0     0%   100%   512.02kB  2.48%  net/http.(*Server).ListenAndServe
+         0     0%   100%   512.02kB  2.48%  net/http.(*Server).Serve
+         0     0%   100%   512.16kB  2.48%  net/http.(*conn).readRequest
+         0     0%   100%  2210.43kB 10.69%  net/http.(*conn).serve
+         0     0%   100%  1184.27kB  5.73%  net/http.HandlerFunc.ServeHTTP
+         0     0%   100%   512.02kB  2.48%  net/http.ListenAndServe (inline)
+         0     0%   100%      514kB  2.49%  net/http.newBufioReader
+         0     0%   100%  1184.27kB  5.73%  net/http.serverHandler.ServeHTTP
+         0     0%   100%  1184.27kB  5.73%  net/http/pprof.Profile
+         0     0%   100%  1025.39kB  4.96%  runtime.doInit (inline)
+         0     0%   100%  1025.39kB  4.96%  runtime.doInit1
+         0     0%   100% 15379.12kB 74.38%  runtime.main
+         0     0%   100%     1026kB  4.96%  runtime.mcall
+         0     0%   100%     1539kB  7.44%  runtime.mstart
+         0     0%   100%     1539kB  7.44%  runtime.mstart0
+         0     0%   100%     1539kB  7.44%  runtime.mstart1
+         0     0%   100%     2565kB 12.41%  runtime.newm
+         0     0%   100%     1026kB  4.96%  runtime.park_m
+         0     0%   100%     2565kB 12.41%  runtime.resetspinning
+         0     0%   100%     2565kB 12.41%  runtime.schedule
+         0     0%   100%     2565kB 12.41%  runtime.startm
+         0     0%   100%     2565kB 12.41%  runtime.wakep
+         0     0%   100%   521.05kB  2.52%  runtime/pprof.(*profileBuilder).addCPUData
+         0     0%   100%   521.05kB  2.52%  runtime/pprof.profileWriter
+         0     0%   100%  1024.04kB  4.95%  strings.(*Builder).Grow
+         0     0%   100%  1024.04kB  4.95%  strings.Map

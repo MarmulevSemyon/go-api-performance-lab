@@ -1,0 +1,221 @@
+File: api
+Build ID: 3f280790d2d668cc3e9463de2ddfc9c6a1a76077
+Type: cpu
+Time: 2026-06-03 22:09:41 MSK
+Duration: 40.01s, Total samples = 56.32s (140.76%)
+Showing nodes accounting for 41.47s, 73.63% of 56.32s total
+Dropped 637 nodes (cum <= 0.28s)
+      flat  flat%   sum%        cum   cum%
+    26.06s 46.27% 46.27%     26.06s 46.27%  internal/runtime/syscall.Syscall6
+     1.80s  3.20% 49.47%      1.80s  3.20%  runtime.futex
+     1.02s  1.81% 51.28%      1.02s  1.81%  runtime.memmove
+     0.73s  1.30% 52.57%      0.73s  1.30%  runtime.nextFreeFast (inline)
+     0.68s  1.21% 53.78%      0.68s  1.21%  runtime.usleep
+     0.59s  1.05% 54.83%      0.72s  1.28%  runtime.findObject
+     0.58s  1.03% 55.86%      0.64s  1.14%  encoding/json.appendString[go.shape.string]
+     0.57s  1.01% 56.87%      2.41s  4.28%  runtime.scanobject
+     0.55s  0.98% 57.85%      3.71s  6.59%  encoding/json.structEncoder.encode
+     0.53s  0.94% 58.79%      0.53s  0.94%  runtime.memclrNoHeapPointers
+     0.42s  0.75% 59.53%      0.44s  0.78%  reflect.Value.Field
+     0.28s   0.5% 60.03%     42.69s 75.80%  net/http.(*conn).serve
+     0.26s  0.46% 60.49%      0.30s  0.53%  runtime.findfunc
+     0.24s  0.43% 60.92%      0.42s  0.75%  internal/sync.(*Mutex).Lock (inline)
+     0.24s  0.43% 61.35%      1.31s  2.33%  runtime.netpoll
+     0.22s  0.39% 61.74%      2.87s  5.10%  runtime.mallocgcSmallScanNoHeader
+     0.20s  0.36% 62.09%      0.40s  0.71%  internal/poll.runtime_pollSetDeadline
+     0.19s  0.34% 62.43%      2.60s  4.62%  runtime.newobject
+     0.16s  0.28% 62.71%     11.09s 19.69%  net/http.(*response).finishRequest
+     0.16s  0.28% 63.00%      0.46s  0.82%  runtime.lock2
+     0.15s  0.27% 63.26%      3.51s  6.23%  bufio.(*Reader).fill
+     0.15s  0.27% 63.53%      0.42s  0.75%  runtime.mapaccess1_faststr
+     0.15s  0.27% 63.80%      4.73s  8.40%  runtime.schedule
+     0.15s  0.27% 64.06%      0.37s  0.66%  sync.(*Pool).Get
+     0.14s  0.25% 64.31%      0.36s  0.64%  context.(*cancelCtx).Done
+     0.14s  0.25% 64.56%      5.96s 10.58%  log.(*Logger).output
+     0.13s  0.23% 64.79%      0.40s  0.71%  encoding/json.appendCompact
+     0.13s  0.23% 65.02%      0.41s  0.73%  net/http.Header.writeSubset
+     0.13s  0.23% 65.25%      0.30s  0.53%  sync.(*Pool).Put
+     0.12s  0.21% 65.47%      4.32s  7.67%  runtime.findRunnable
+     0.11s   0.2% 65.66%      0.92s  1.63%  encoding/json.marshalerEncoder
+     0.11s   0.2% 65.86%      0.37s  0.66%  fmt.(*pp).doPrintf
+     0.11s   0.2% 66.05%      1.45s  2.57%  net/http.(*chunkWriter).writeHeader
+     0.11s   0.2% 66.25%      0.29s  0.51%  runtime.casgstatus
+     0.10s  0.18% 66.42%      3.71s  6.59%  net/http.readRequest
+     0.10s  0.18% 66.60%      0.67s  1.19%  runtime.greyobject
+     0.10s  0.18% 66.78%      0.76s  1.35%  runtime.mallocgcSmallNoscan
+     0.09s  0.16% 66.94%      2.47s  4.39%  bufio.(*Reader).Peek
+     0.09s  0.16% 67.10%      3.33s  5.91%  internal/poll.(*FD).Read
+     0.09s  0.16% 67.26%      0.34s   0.6%  log.formatHeader
+     0.09s  0.16% 67.42%      3.36s  5.97%  net/http.(*connReader).Read
+     0.09s  0.16% 67.58%      4.24s  7.53%  runtime.mallocgc
+     0.08s  0.14% 67.72%      0.91s  1.62%  encoding/json.stringEncoder
+     0.08s  0.14% 67.86%      0.41s  0.73%  runtime.exitsyscall
+     0.08s  0.14% 68.00%      0.77s  1.37%  runtime.runqgrab
+     0.08s  0.14% 68.15%     23.62s 41.94%  syscall.RawSyscall6
+     0.07s  0.12% 68.27%     13.62s 24.18%  l45/internal/httpapi.(*Handler).GetOrder
+     0.07s  0.12% 68.39%      1.14s  2.02%  net/textproto.readMIMEHeader
+     0.07s  0.12% 68.52%      2.40s  4.26%  runtime.gcDrain
+     0.06s  0.11% 68.63%      0.36s  0.64%  internal/runtime/maps.(*Map).Delete
+     0.06s  0.11% 68.73%      4.53s  8.04%  net/http.(*Server).Serve
+     0.06s  0.11% 68.84%      4.30s  7.63%  os.(*File).Write
+     0.06s  0.11% 68.95%      0.33s  0.59%  runtime.SetFinalizer
+     0.06s  0.11% 69.05%      0.57s  1.01%  runtime.mapassign_faststr
+     0.06s  0.11% 69.16%      5.16s  9.16%  runtime.mcall
+     0.05s 0.089% 69.25%      1.23s  2.18%  bufio.(*Reader).ReadSlice
+     0.05s 0.089% 69.34%      0.35s  0.62%  encoding/json.intEncoder
+     0.05s 0.089% 69.42%     12.84s 22.80%  internal/poll.(*FD).Write
+     0.05s 0.089% 69.51%     13.67s 24.27%  net/http.HandlerFunc.ServeHTTP
+     0.05s 0.089% 69.60%      0.31s  0.55%  net/url.parse
+     0.05s 0.089% 69.69%      0.34s   0.6%  runtime.(*mspan).typePointersOfUnchecked
+     0.05s 0.089% 69.78%      0.49s  0.87%  runtime.newproc1
+     0.05s 0.089% 69.87%     21.62s 38.39%  syscall.Syscall
+     0.04s 0.071% 69.94%      0.51s  0.91%  context.WithCancel.func1
+     0.04s 0.071% 70.01%      4.40s  7.81%  encoding/json.Marshal
+     0.04s 0.071% 70.08%      1.25s  2.22%  encoding/json.arrayEncoder.encode
+     0.04s 0.071% 70.15%      1.30s  2.31%  encoding/json.sliceEncoder.encode
+     0.04s 0.071% 70.22%      1.98s  3.52%  internal/poll.(*FD).Accept
+     0.04s 0.071% 70.29%      3.73s  6.62%  net.(*conn).Read
+     0.04s 0.071% 70.37%      5.18s  9.20%  net/http.(*conn).readRequest
+     0.04s 0.071% 70.44%      0.35s  0.62%  net/url.ParseRequestURI
+     0.04s 0.071% 70.51%      0.38s  0.67%  runtime.isSystemGoroutine
+     0.04s 0.071% 70.58%      3.88s  6.89%  runtime.park_m
+     0.04s 0.071% 70.65%      0.43s  0.76%  runtime.unlock2
+     0.04s 0.071% 70.72%      0.31s  0.55%  time.Now
+     0.03s 0.053% 70.77%      1.26s  2.24%  bufio.(*Reader).ReadLine
+     0.03s 0.053% 70.83%      0.47s  0.83%  context.(*cancelCtx).cancel
+     0.03s 0.053% 70.88%      0.43s  0.76%  context.(*cancelCtx).propagateCancel
+     0.03s 0.053% 70.93%      0.82s  1.46%  internal/poll.(*FD).SetsockoptInt
+     0.03s 0.053% 70.99%      0.54s  0.96%  internal/poll.setDeadlineImpl
+     0.03s 0.053% 71.04%      0.56s  0.99%  net.(*conn).SetReadDeadline
+     0.03s 0.053% 71.09%      3.38s  6.00%  net.(*netFD).Read
+     0.03s 0.053% 71.15%      3.27s  5.81%  net.(*netFD).accept
+     0.03s 0.053% 71.20%     14.07s 24.98%  net/http.(*ServeMux).ServeHTTP
+     0.03s 0.053% 71.25%      0.37s  0.66%  net/http.(*ServeMux).findHandler
+     0.03s 0.053% 71.31%      0.31s  0.55%  net/http.(*conn).setState
+     0.03s 0.053% 71.36%      0.58s  1.03%  net/http.(*connReader).abortPendingRead
+     0.03s 0.053% 71.41%      1.02s  1.81%  net/http.(*connReader).backgroundRead
+     0.03s 0.053% 71.47%     14.10s 25.04%  net/http.serverHandler.ServeHTTP
+     0.03s 0.053% 71.52%      1.29s  2.29%  net/textproto.(*Reader).readLineSlice
+     0.03s 0.053% 71.57%      0.32s  0.57%  net/url.parseQuery
+     0.03s 0.053% 71.63%      4.24s  7.53%  os.(*File).write (inline)
+     0.03s 0.053% 71.68%      0.71s  1.26%  runtime.(*mcache).refill
+     0.03s 0.053% 71.73%      0.49s  0.87%  runtime.(*mcentral).cacheSpan
+     0.03s 0.053% 71.79%      0.89s  1.58%  runtime.copystack
+     0.03s 0.053% 71.84%      0.31s  0.55%  runtime.heapSetTypeNoHeader (inline)
+     0.03s 0.053% 71.89%      0.48s  0.85%  runtime.newarray
+     0.03s 0.053% 71.95%      0.80s  1.42%  runtime.runqsteal
+     0.03s 0.053% 72.00%      0.44s  0.78%  runtime.slicebytetostring
+     0.03s 0.053% 72.05%      4.42s  7.85%  runtime.systemstack
+     0.03s 0.053% 72.11%      0.32s  0.57%  strconv.AppendInt
+     0.03s 0.053% 72.16%      1.92s  3.41%  syscall.Accept4
+     0.03s 0.053% 72.21%      6.10s 10.83%  syscall.Close
+     0.03s 0.053% 72.27%      2.88s  5.11%  syscall.Read (inline)
+     0.02s 0.036% 72.30%      0.32s  0.57%  bufio.(*Writer).Write
+     0.02s 0.036% 72.34%      7.15s 12.70%  internal/poll.(*FD).decref
+     0.02s 0.036% 72.37%      0.73s  1.30%  internal/poll.runtime_pollOpen
+     0.02s 0.036% 72.41%      0.35s  0.62%  net.(*TCPAddr).String
+     0.02s 0.036% 72.44%      7.41s 13.16%  net.(*conn).Close
+     0.02s 0.036% 72.48%      7.72s 13.71%  net/http.(*conn).serve.func1
+     0.02s 0.036% 72.51%      0.37s  0.66%  net/http.(*response).WriteHeader
+     0.02s 0.036% 72.55%      1.38s  2.45%  net/textproto.(*Reader).ReadLine (inline)
+     0.02s 0.036% 72.59%      0.75s  1.33%  runtime.(*mcache).nextFree
+     0.02s 0.036% 72.62%      0.31s  0.55%  runtime.adjustframe
+     0.02s 0.036% 72.66%      0.32s  0.57%  runtime.convT
+     0.02s 0.036% 72.69%      0.36s  0.64%  runtime.entersyscall
+     0.02s 0.036% 72.73%      0.71s  1.26%  runtime.futexsleep
+     0.02s 0.036% 72.76%      0.35s  0.62%  runtime.gcAssistAlloc
+     0.02s 0.036% 72.80%      0.29s  0.51%  runtime.gdestroy
+     0.02s 0.036% 72.83%      0.32s  0.57%  runtime.growslice
+     0.02s 0.036% 72.87%      0.43s  0.76%  runtime.lock (inline)
+     0.02s 0.036% 72.90%      0.64s  1.14%  runtime.mPark (inline)
+     0.02s 0.036% 72.94%      1.08s  1.92%  runtime.makemap_small
+     0.02s 0.036% 72.98%      0.31s  0.55%  runtime.makeslice
+     0.02s 0.036% 73.01%      0.62s  1.10%  runtime.notesleep
+     0.02s 0.036% 73.05%      0.88s  1.56%  runtime.stealWork
+     0.02s 0.036% 73.08%     12.73s 22.60%  syscall.write
+     0.02s 0.036% 73.12%      0.34s   0.6%  time.Time.MarshalJSON
+     0.01s 0.018% 73.14%     10.30s 18.29%  bufio.(*Writer).Flush
+     0.01s 0.018% 73.15%      0.73s  1.30%  context.WithCancel
+     0.01s 0.018% 73.17%      3.77s  6.69%  encoding/json.(*encodeState).reflectValue
+     0.01s 0.018% 73.19%      0.47s  0.83%  fmt.Appendf
+     0.01s 0.018% 73.21%      0.74s  1.31%  internal/poll.(*FD).Init
+     0.01s 0.018% 73.22%      6.11s 10.85%  internal/poll.(*SysFile).destroy (inline)
+     0.01s 0.018% 73.24%      0.98s  1.74%  internal/poll.runtime_pollClose
+     0.01s 0.018% 73.26%      0.50s  0.89%  internal/runtime/maps.(*Map).growToSmall
+     0.01s 0.018% 73.28%      0.49s  0.87%  internal/runtime/maps.newarray
+     0.01s 0.018% 73.30%      0.31s  0.55%  l45/internal/httpapi.(*Handler).GetOrder.Printf.func1
+     0.01s 0.018% 73.31%      4.17s  7.40%  net.(*TCPListener).Accept
+     0.01s 0.018% 73.33%      4.16s  7.39%  net.(*TCPListener).accept
+     0.01s 0.018% 73.35%      7.39s 13.12%  net.(*netFD).Close
+     0.01s 0.018% 73.37%      8.67s 15.39%  net.(*netFD).Write
+     0.01s 0.018% 73.38%      0.88s  1.56%  net.newTCPConn
+     0.01s 0.018% 73.40%      7.54s 13.39%  net/http.(*conn).close
+     0.01s 0.018% 73.42%      0.54s  0.96%  net/http.(*connReader).startBackgroundRead
+     0.01s 0.018% 73.44%      8.73s 15.50%  net/http.checkConnErrorWriter.Write
+     0.01s 0.018% 73.46%      1.38s  2.45%  net/url.(*URL).Query
+     0.01s 0.018% 73.47%      0.35s  0.62%  runtime.(*unwinder).next
+     0.01s 0.018% 73.49%      0.41s  0.73%  runtime.deductAssistCredit
+     0.01s 0.018% 73.51%      2.46s  4.37%  runtime.gcBgMarkWorker
+     0.01s 0.018% 73.53%      0.66s  1.17%  runtime.injectglist.func1
+     0.01s 0.018% 73.54%      1.02s  1.81%  runtime.newstack
+     0.01s 0.018% 73.56%      0.78s  1.38%  runtime.notewakeup
+     0.01s 0.018% 73.58%      0.75s  1.33%  runtime.startm
+     0.01s 0.018% 73.60%      0.40s  0.71%  runtime.wakep
+     0.01s 0.018% 73.62%      2.62s  4.65%  syscall.Syscall6
+     0.01s 0.018% 73.63%      2.85s  5.06%  syscall.read
+         0     0% 73.63%      0.59s  1.05%  context.withCancel (inline)
+         0     0% 73.63%      3.82s  6.78%  encoding/json.(*encodeState).marshal
+         0     0% 73.63%      0.92s  1.63%  encoding/json.condAddrEncoder.encode
+         0     0% 73.63%      7.17s 12.73%  internal/poll.(*FD).Close
+         0     0% 73.63%      0.53s  0.94%  internal/poll.(*FD).SetReadDeadline (inline)
+         0     0% 73.63%      7.13s 12.66%  internal/poll.(*FD).destroy
+         0     0% 73.63%      0.98s  1.74%  internal/poll.(*pollDesc).close (inline)
+         0     0% 73.63%      0.73s  1.30%  internal/poll.(*pollDesc).init
+         0     0% 73.63%      1.92s  3.41%  internal/poll.accept
+         0     0% 73.63%     15.68s 27.84%  internal/poll.ignoringEINTRIO (inline)
+         0     0% 73.63%      1.06s  1.88%  internal/runtime/maps.NewEmptyMap (inline)
+         0     0% 73.63%      0.49s  0.87%  internal/runtime/maps.newGroups (inline)
+         0     0% 73.63%      1.59s  2.82%  internal/runtime/syscall.EpollCtl (inline)
+         0     0% 73.63%      0.93s  1.65%  internal/runtime/syscall.EpollWait
+         0     0% 73.63%      2.57s  4.56%  l45/internal/repository.(*Repository).GetOrderByID
+         0     0% 73.63%      5.96s 10.58%  log.Printf (inline)
+         0     0% 73.63%      4.53s  8.04%  main.main
+         0     0% 73.63%      0.63s  1.12%  net.(*TCPConn).SetKeepAliveConfig
+         0     0% 73.63%      8.67s 15.39%  net.(*conn).Write
+         0     0% 73.63%      0.53s  0.94%  net.(*netFD).SetReadDeadline (inline)
+         0     0% 73.63%      0.74s  1.31%  net.(*netFD).init (inline)
+         0     0% 73.63%      4.53s  8.04%  net/http.(*Server).ListenAndServe
+         0     0% 73.63%      1.56s  2.77%  net/http.(*chunkWriter).Write
+         0     0% 73.63%      0.33s  0.59%  net/http.Header.Set (inline)
+         0     0% 73.63%      0.41s  0.73%  net/http.Header.WriteSubset (inline)
+         0     0% 73.63%      4.53s  8.04%  net/http.ListenAndServe (inline)
+         0     0% 73.63%      1.14s  2.02%  net/textproto.(*Reader).ReadMIMEHeader (inline)
+         0     0% 73.63%      0.33s  0.59%  net/textproto.MIMEHeader.Set (inline)
+         0     0% 73.63%      1.37s  2.43%  net/url.ParseQuery (inline)
+         0     0% 73.63%      0.33s  0.59%  runtime.(*mcentral).grow
+         0     0% 73.63%      0.29s  0.51%  runtime.(*mheap).allocSpan
+         0     0% 73.63%      1.11s  1.97%  runtime.futexwakeup
+         0     0% 73.63%      0.33s  0.59%  runtime.gcAssistAlloc.func2
+         0     0% 73.63%      0.33s  0.59%  runtime.gcAssistAlloc1
+         0     0% 73.63%      2.40s  4.26%  runtime.gcBgMarkWorker.func2
+         0     0% 73.63%      1.81s  3.21%  runtime.gcDrainMarkWorkerDedicated (inline)
+         0     0% 73.63%      0.59s  1.05%  runtime.gcDrainMarkWorkerIdle (inline)
+         0     0% 73.63%      0.33s  0.59%  runtime.gcDrainN
+         0     0% 73.63%      1.19s  2.11%  runtime.goexit0
+         0     0% 73.63%      0.72s  1.28%  runtime.injectglist
+         0     0% 73.63%      0.46s  0.82%  runtime.lockWithRank (inline)
+         0     0% 73.63%      4.53s  8.04%  runtime.main
+         0     0% 73.63%      0.95s  1.69%  runtime.netpollclose
+         0     0% 73.63%      0.64s  1.14%  runtime.netpollopen
+         0     0% 73.63%      0.59s  1.05%  runtime.newproc
+         0     0% 73.63%      0.59s  1.05%  runtime.newproc.func1
+         0     0% 73.63%      0.34s   0.6%  runtime.semawakeup (inline)
+         0     0% 73.63%      0.67s  1.19%  runtime.stopm
+         0     0% 73.63%      0.43s  0.76%  runtime.unlock (inline)
+         0     0% 73.63%      0.34s   0.6%  runtime.unlock2Wake
+         0     0% 73.63%      0.43s  0.76%  runtime.unlockWithRank (inline)
+         0     0% 73.63%      0.42s  0.75%  sync.(*Mutex).Lock (inline)
+         0     0% 73.63%      0.79s  1.40%  syscall.SetsockoptInt (inline)
+         0     0% 73.63%     12.73s 22.60%  syscall.Write (inline)
+         0     0% 73.63%      1.83s  3.25%  syscall.accept4
+         0     0% 73.63%      0.79s  1.40%  syscall.setsockopt
