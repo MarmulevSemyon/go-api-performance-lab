@@ -1,0 +1,61 @@
+File: api
+Build ID: 8791c011a19f981b8c64f9168bb2baea1953057d
+Type: inuse_space
+Time: 2026-06-03 23:01:46 MSK
+Showing nodes accounting for 20216.80kB, 100% of 20216.80kB total
+      flat  flat%   sum%        cum   cum%
+ 7696.79kB 38.07% 38.07% 12816.96kB 63.40%  l45/internal/generator.GenerateOrders
+ 1762.94kB  8.72% 46.79%  1762.94kB  8.72%  runtime/pprof.StartCPUProfile
+ 1536.07kB  7.60% 54.39%  1536.07kB  7.60%  github.com/brianvoe/gofakeit/v7.uuid
+ 1536.06kB  7.60% 61.99%  1536.06kB  7.60%  strings.(*Builder).grow
+ 1536.02kB  7.60% 69.59%  1536.02kB  7.60%  fmt.Sprintf
+    1026kB  5.07% 74.66%     1026kB  5.07%  runtime.allocm
+ 1024.44kB  5.07% 79.73%  1024.44kB  5.07%  runtime.malg
+     514kB  2.54% 82.27%      514kB  2.54%  bufio.NewReaderSize (inline)
+  512.17kB  2.53% 84.80%   512.17kB  2.53%  net/textproto.MIMEHeader.Set (inline)
+  512.12kB  2.53% 87.34%  1024.17kB  5.07%  net/http.(*conn).readRequest
+  512.05kB  2.53% 89.87%   512.05kB  2.53%  context.(*cancelCtx).Done
+  512.05kB  2.53% 92.40%   512.05kB  2.53%  runtime.(*scavengerState).init
+  512.05kB  2.53% 94.93%   512.05kB  2.53%  runtime.acquireSudog
+  512.02kB  2.53% 97.47%   512.02kB  2.53%  vendor/golang.org/x/net/dns/dnsmessage.init
+  512.01kB  2.53%   100%   512.01kB  2.53%  github.com/brianvoe/gofakeit/v7.street
+         0     0%   100%      514kB  2.54%  bufio.NewReader (inline)
+         0     0%   100%   512.05kB  2.53%  context.(*cancelCtx).propagateCancel
+         0     0%   100%   512.05kB  2.53%  context.WithCancel
+         0     0%   100%   512.05kB  2.53%  context.withCancel (inline)
+         0     0%   100%  1536.06kB  7.60%  github.com/brianvoe/gofakeit/v7.ProductName (inline)
+         0     0%   100%   512.01kB  2.53%  github.com/brianvoe/gofakeit/v7.Street (inline)
+         0     0%   100%  1536.07kB  7.60%  github.com/brianvoe/gofakeit/v7.UUID (inline)
+         0     0%   100%  1536.06kB  7.60%  github.com/brianvoe/gofakeit/v7.productName
+         0     0%   100%  1536.06kB  7.60%  github.com/brianvoe/gofakeit/v7.title
+         0     0%   100%   512.17kB  2.53%  l45/internal/httpapi.(*Handler).GetOrder
+         0     0%   100%   512.17kB  2.53%  l45/internal/httpapi.writeJSON
+         0     0%   100% 12816.96kB 63.40%  main.main
+         0     0%   100%  2275.11kB 11.25%  net/http.(*ServeMux).ServeHTTP
+         0     0%   100%  3813.28kB 18.86%  net/http.(*conn).serve
+         0     0%   100%  2275.11kB 11.25%  net/http.HandlerFunc.ServeHTTP
+         0     0%   100%   512.17kB  2.53%  net/http.Header.Set (inline)
+         0     0%   100%      514kB  2.54%  net/http.newBufioReader
+         0     0%   100%  2275.11kB 11.25%  net/http.serverHandler.ServeHTTP
+         0     0%   100%  1762.94kB  8.72%  net/http/pprof.Profile
+         0     0%   100%   512.05kB  2.53%  runtime.bgscavenge
+         0     0%   100%   512.02kB  2.53%  runtime.doInit (inline)
+         0     0%   100%   512.02kB  2.53%  runtime.doInit1
+         0     0%   100%   512.05kB  2.53%  runtime.gcBgMarkWorker
+         0     0%   100%   512.05kB  2.53%  runtime.gcMarkDone
+         0     0%   100% 13328.99kB 65.93%  runtime.main
+         0     0%   100%     1026kB  5.07%  runtime.mstart
+         0     0%   100%     1026kB  5.07%  runtime.mstart0
+         0     0%   100%     1026kB  5.07%  runtime.mstart1
+         0     0%   100%     1026kB  5.07%  runtime.newm
+         0     0%   100%  1024.44kB  5.07%  runtime.newproc.func1
+         0     0%   100%  1024.44kB  5.07%  runtime.newproc1
+         0     0%   100%     1026kB  5.07%  runtime.resetspinning
+         0     0%   100%     1026kB  5.07%  runtime.schedule
+         0     0%   100%   512.05kB  2.53%  runtime.semacquire (inline)
+         0     0%   100%   512.05kB  2.53%  runtime.semacquire1
+         0     0%   100%     1026kB  5.07%  runtime.startm
+         0     0%   100%  1024.44kB  5.07%  runtime.systemstack
+         0     0%   100%     1026kB  5.07%  runtime.wakep
+         0     0%   100%  1536.06kB  7.60%  strings.(*Builder).Grow
+         0     0%   100%  1536.06kB  7.60%  strings.Map

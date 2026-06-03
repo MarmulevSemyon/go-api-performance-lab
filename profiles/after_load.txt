@@ -1,0 +1,9 @@
+Load test finished
+URL:          http://localhost:8080/order?id=order-1
+Requests:     300000
+Concurrency:  50
+OK:           300000
+Errors:       0
+Duration:     14.480860294s
+RPS:          20717.00
+Avg latency:  1.985605ms
