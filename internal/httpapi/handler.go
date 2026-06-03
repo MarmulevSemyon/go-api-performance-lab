@@ -39,12 +39,24 @@ func (c *JSONCache) Set(id string, data []byte) {
 type Handler struct {
 	repo      repository.OrderReader
 	jsonCache *JSONCache
+	debug     bool
 }
 
 func NewHandler(repo repository.OrderReader) *Handler {
 	return &Handler{
 		repo:      repo,
 		jsonCache: NewJSONCache(),
+		debug:     false,
+	}
+}
+
+func (h *Handler) SetDebug(debug bool) {
+	h.debug = debug
+}
+
+func (h *Handler) logf(format string, args ...any) {
+	if h.debug {
+		log.Printf(format, args...)
 	}
 }
 
@@ -65,7 +77,7 @@ func (h *Handler) GetOrder(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	log.Printf("request order id=%s", id)
+	h.logf("request order id=%s", id)
 
 	if data, ok := h.jsonCache.Get(id); ok {
 		writeJSON(w, data)
@@ -79,7 +91,7 @@ func (h *Handler) GetOrder(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 
-		log.Printf("get order error: %v", err)
+		h.logf("get order error: %v", err)
 		http.Error(w, "internal server error", http.StatusInternalServerError)
 		return
 	}
@@ -91,7 +103,7 @@ func (h *Handler) GetOrder(w http.ResponseWriter, r *http.Request) {
 
 	data, err := json.Marshal(order)
 	if err != nil {
-		log.Printf("json marshal error: %v", err)
+		h.logf("json marshal error: %v", err)
 		http.Error(w, "json marshal error", http.StatusInternalServerError)
 		return
 	}

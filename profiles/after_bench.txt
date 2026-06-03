@@ -1,0 +1,16 @@
+goos: linux
+goarch: amd64
+pkg: l45/internal/httpapi
+cpu: AMD Ryzen 7 4700U with Radeon Graphics         
+BenchmarkGetOrderCacheHit-8   	 2327755	       482.9 ns/op	     448 B/op	       5 allocs/op
+BenchmarkGetOrderCacheHit-8   	 2483614	       461.0 ns/op	     448 B/op	       5 allocs/op
+BenchmarkGetOrderCacheHit-8   	 2468772	       539.2 ns/op	     448 B/op	       5 allocs/op
+BenchmarkGetOrderCacheHit-8   	 2546654	       487.6 ns/op	     448 B/op	       5 allocs/op
+BenchmarkGetOrderCacheHit-8   	 2537970	       469.3 ns/op	     448 B/op	       5 allocs/op
+BenchmarkGetOrderCacheHit-8   	 2642826	       437.9 ns/op	     448 B/op	       5 allocs/op
+BenchmarkGetOrderCacheHit-8   	 2712566	       437.3 ns/op	     448 B/op	       5 allocs/op
+BenchmarkGetOrderCacheHit-8   	 2723600	       481.2 ns/op	     448 B/op	       5 allocs/op
+BenchmarkGetOrderCacheHit-8   	 2505704	       478.5 ns/op	     448 B/op	       5 allocs/op
+BenchmarkGetOrderCacheHit-8   	 2550954	       448.8 ns/op	     448 B/op	       5 allocs/op
+PASS
+ok  	l45/internal/httpapi	21.688s

@@ -3,7 +3,6 @@ package repository
 import (
 	"context"
 	"errors"
-	"log"
 	"sync"
 
 	"l45/internal/model"
@@ -40,11 +39,8 @@ func (r *Repository) GetOrderByID(ctx context.Context, id string) (model.Order, 
 	r.mu.RUnlock()
 
 	if ok {
-		log.Printf("cache hit: order id=%s", id)
 		return order, true, nil
 	}
-
-	log.Printf("cache miss: order id=%s", id)
 
 	order, ok = r.storage[id]
 	if !ok {
