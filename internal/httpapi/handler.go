@@ -5,17 +5,46 @@ import (
 	"errors"
 	"log"
 	"net/http"
+	"sync"
 
 	"l45/internal/repository"
 )
 
+type JSONCache struct {
+	mu    sync.RWMutex
+	items map[string][]byte
+}
+
+func NewJSONCache() *JSONCache {
+	return &JSONCache{
+		items: make(map[string][]byte),
+	}
+}
+
+func (c *JSONCache) Get(id string) ([]byte, bool) {
+	c.mu.RLock()
+	defer c.mu.RUnlock()
+
+	data, ok := c.items[id]
+	return data, ok
+}
+
+func (c *JSONCache) Set(id string, data []byte) {
+	c.mu.Lock()
+	defer c.mu.Unlock()
+
+	c.items[id] = data
+}
+
 type Handler struct {
-	repo repository.OrderReader
+	repo      repository.OrderReader
+	jsonCache *JSONCache
 }
 
 func NewHandler(repo repository.OrderReader) *Handler {
 	return &Handler{
-		repo: repo,
+		repo:      repo,
+		jsonCache: NewJSONCache(),
 	}
 }
 
@@ -37,6 +66,11 @@ func (h *Handler) GetOrder(w http.ResponseWriter, r *http.Request) {
 	}
 
 	log.Printf("request order id=%s", id)
+
+	if data, ok := h.jsonCache.Get(id); ok {
+		writeJSON(w, data)
+		return
+	}
 
 	order, ok, err := h.repo.GetOrderByID(r.Context(), id)
 	if err != nil {
@@ -62,6 +96,12 @@ func (h *Handler) GetOrder(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	h.jsonCache.Set(id, data)
+
+	writeJSON(w, data)
+}
+
+func writeJSON(w http.ResponseWriter, data []byte) {
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
 	_, _ = w.Write(data)
