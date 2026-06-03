@@ -1,0 +1,15 @@
+goos: linux
+goarch: amd64
+pkg: l45/internal/httpapi
+cpu: AMD Ryzen 7 4700U with Radeon Graphics         
+                   │ profiles/before_bench.txt │      profiles/after_bench.txt       │
+                   │          sec/op           │   sec/op     vs base                │
+GetOrderCacheHit-8                6213.5n ± 4%   473.9n ± 8%  -92.37% (p=0.000 n=10)
+
+                   │ profiles/before_bench.txt │      profiles/after_bench.txt      │
+                   │           B/op            │    B/op     vs base                │
+GetOrderCacheHit-8                 3041.0 ± 0%   448.0 ± 0%  -85.27% (p=0.000 n=10)
+
+                   │ profiles/before_bench.txt │      profiles/after_bench.txt      │
+                   │         allocs/op         │ allocs/op   vs base                │
+GetOrderCacheHit-8                  9.000 ± 0%   5.000 ± 0%  -44.44% (p=0.000 n=10)
