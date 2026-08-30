@@ -6,7 +6,7 @@ import (
 
 	"github.com/brianvoe/gofakeit/v7"
 
-	"l45/internal/model"
+	"github.com/MarmulevSemyon/go-api-performance-lab/internal/model"
 )
 
 func GenerateOrders(count int) map[string]model.Order {

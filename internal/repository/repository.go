@@ -5,7 +5,7 @@ import (
 	"errors"
 	"sync"
 
-	"l45/internal/model"
+	"github.com/MarmulevSemyon/go-api-performance-lab/internal/model"
 )
 
 var ErrNotFound = errors.New("order not found")

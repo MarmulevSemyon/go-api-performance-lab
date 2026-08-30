@@ -7,8 +7,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"l45/internal/generator"
-	"l45/internal/repository"
+	"github.com/MarmulevSemyon/go-api-performance-lab/internal/generator"
+	"github.com/MarmulevSemyon/go-api-performance-lab/internal/repository"
 )
 
 type benchmarkResponseWriter struct {

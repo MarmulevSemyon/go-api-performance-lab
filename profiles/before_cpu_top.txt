@@ -52,7 +52,7 @@ Dropped 637 nodes (cum <= 0.28s)
      0.08s  0.14% 67.86%      0.41s  0.73%  runtime.exitsyscall
      0.08s  0.14% 68.00%      0.77s  1.37%  runtime.runqgrab
      0.08s  0.14% 68.15%     23.62s 41.94%  syscall.RawSyscall6
-     0.07s  0.12% 68.27%     13.62s 24.18%  l45/internal/httpapi.(*Handler).GetOrder
+     0.07s  0.12% 68.27%     13.62s 24.18%  github.com/MarmulevSemyon/go-api-performance-lab/internal/httpapi.(*Handler).GetOrder
      0.07s  0.12% 68.39%      1.14s  2.02%  net/textproto.readMIMEHeader
      0.07s  0.12% 68.52%      2.40s  4.26%  runtime.gcDrain
      0.06s  0.11% 68.63%      0.36s  0.64%  internal/runtime/maps.(*Map).Delete
@@ -143,7 +143,7 @@ Dropped 637 nodes (cum <= 0.28s)
      0.01s 0.018% 73.24%      0.98s  1.74%  internal/poll.runtime_pollClose
      0.01s 0.018% 73.26%      0.50s  0.89%  internal/runtime/maps.(*Map).growToSmall
      0.01s 0.018% 73.28%      0.49s  0.87%  internal/runtime/maps.newarray
-     0.01s 0.018% 73.30%      0.31s  0.55%  l45/internal/httpapi.(*Handler).GetOrder.Printf.func1
+     0.01s 0.018% 73.30%      0.31s  0.55%  github.com/MarmulevSemyon/go-api-performance-lab/internal/httpapi.(*Handler).GetOrder.Printf.func1
      0.01s 0.018% 73.31%      4.17s  7.40%  net.(*TCPListener).Accept
      0.01s 0.018% 73.33%      4.16s  7.39%  net.(*TCPListener).accept
      0.01s 0.018% 73.35%      7.39s 13.12%  net.(*netFD).Close
@@ -177,7 +177,7 @@ Dropped 637 nodes (cum <= 0.28s)
          0     0% 73.63%      0.49s  0.87%  internal/runtime/maps.newGroups (inline)
          0     0% 73.63%      1.59s  2.82%  internal/runtime/syscall.EpollCtl (inline)
          0     0% 73.63%      0.93s  1.65%  internal/runtime/syscall.EpollWait
-         0     0% 73.63%      2.57s  4.56%  l45/internal/repository.(*Repository).GetOrderByID
+         0     0% 73.63%      2.57s  4.56%  github.com/MarmulevSemyon/go-api-performance-lab/internal/repository.(*Repository).GetOrderByID
          0     0% 73.63%      5.96s 10.58%  log.Printf (inline)
          0     0% 73.63%      4.53s  8.04%  main.main
          0     0% 73.63%      0.63s  1.12%  net.(*TCPConn).SetKeepAliveConfig

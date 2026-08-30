@@ -1,6 +1,6 @@
 goos: linux
 goarch: amd64
-pkg: l45/internal/httpapi
+pkg: github.com/MarmulevSemyon/go-api-performance-lab/internal/httpapi
 cpu: AMD Ryzen 7 4700U with Radeon Graphics         
 BenchmarkGetOrderCacheHit-8   	 2586661	       448.4 ns/op	     448 B/op	       5 allocs/op
 BenchmarkGetOrderCacheHit-8   	 2709172	       490.5 ns/op	     448 B/op	       5 allocs/op
@@ -13,4 +13,4 @@ BenchmarkGetOrderCacheHit-8   	 2676319	       437.9 ns/op	     448 B/op	       
 BenchmarkGetOrderCacheHit-8   	 2640056	       439.5 ns/op	     448 B/op	       5 allocs/op
 BenchmarkGetOrderCacheHit-8   	 2695848	       440.9 ns/op	     448 B/op	       5 allocs/op
 PASS
-ok  	l45/internal/httpapi	20.306s
+ok  	github.com/MarmulevSemyon/go-api-performance-lab/internal/httpapi	20.306s

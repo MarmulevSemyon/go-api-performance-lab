@@ -1,6 +1,6 @@
 goos: linux
 goarch: amd64
-pkg: l45/internal/httpapi
+pkg: github.com/MarmulevSemyon/go-api-performance-lab/internal/httpapi
 cpu: AMD Ryzen 7 4700U with Radeon Graphics         
                    │ profiles/before_bench.txt │      profiles/after_bench.txt       │
                    │          sec/op           │   sec/op     vs base                │

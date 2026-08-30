@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"sync"
 
-	"l45/internal/repository"
+	"github.com/MarmulevSemyon/go-api-performance-lab/internal/repository"
 )
 
 type JSONCache struct {

@@ -4,7 +4,7 @@ Type: inuse_space
 Time: 2026-06-03 23:01:46 MSK
 Showing nodes accounting for 20216.80kB, 100% of 20216.80kB total
       flat  flat%   sum%        cum   cum%
- 7696.79kB 38.07% 38.07% 12816.96kB 63.40%  l45/internal/generator.GenerateOrders
+ 7696.79kB 38.07% 38.07% 12816.96kB 63.40%  github.com/MarmulevSemyon/go-api-performance-lab/internal/generator.GenerateOrders
  1762.94kB  8.72% 46.79%  1762.94kB  8.72%  runtime/pprof.StartCPUProfile
  1536.07kB  7.60% 54.39%  1536.07kB  7.60%  github.com/brianvoe/gofakeit/v7.uuid
  1536.06kB  7.60% 61.99%  1536.06kB  7.60%  strings.(*Builder).grow
@@ -28,8 +28,8 @@ Showing nodes accounting for 20216.80kB, 100% of 20216.80kB total
          0     0%   100%  1536.07kB  7.60%  github.com/brianvoe/gofakeit/v7.UUID (inline)
          0     0%   100%  1536.06kB  7.60%  github.com/brianvoe/gofakeit/v7.productName
          0     0%   100%  1536.06kB  7.60%  github.com/brianvoe/gofakeit/v7.title
-         0     0%   100%   512.17kB  2.53%  l45/internal/httpapi.(*Handler).GetOrder
-         0     0%   100%   512.17kB  2.53%  l45/internal/httpapi.writeJSON
+         0     0%   100%   512.17kB  2.53%  github.com/MarmulevSemyon/go-api-performance-lab/internal/httpapi.(*Handler).GetOrder
+         0     0%   100%   512.17kB  2.53%  github.com/MarmulevSemyon/go-api-performance-lab/internal/httpapi.writeJSON
          0     0%   100% 12816.96kB 63.40%  main.main
          0     0%   100%  2275.11kB 11.25%  net/http.(*ServeMux).ServeHTTP
          0     0%   100%  3813.28kB 18.86%  net/http.(*conn).serve

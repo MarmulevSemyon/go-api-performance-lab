@@ -4,7 +4,7 @@ Type: inuse_space
 Time: 2026-06-03 22:10:49 MSK
 Showing nodes accounting for 20675.60kB, 100% of 20675.60kB total
       flat  flat%   sum%        cum   cum%
- 9233.51kB 44.66% 44.66% 13841.70kB 66.95%  l45/internal/generator.GenerateOrders
+ 9233.51kB 44.66% 44.66% 13841.70kB 66.95%  github.com/MarmulevSemyon/go-api-performance-lab/internal/generator.GenerateOrders
  3072.14kB 14.86% 59.52%  3072.14kB 14.86%  github.com/brianvoe/gofakeit/v7.uuid
     2565kB 12.41% 71.92%     2565kB 12.41%  runtime.allocm
  1184.27kB  5.73% 77.65%  1184.27kB  5.73%  runtime/pprof.StartCPUProfile

@@ -1,4 +1,4 @@
-module l45
+module github.com/MarmulevSemyon/go-api-performance-lab
 
 go 1.25.7
 

@@ -4,9 +4,9 @@ import (
 	"log"
 	"net/http"
 
-	"l45/internal/generator"
-	"l45/internal/httpapi"
-	"l45/internal/repository"
+	"github.com/MarmulevSemyon/go-api-performance-lab/internal/generator"
+	"github.com/MarmulevSemyon/go-api-performance-lab/internal/httpapi"
+	"github.com/MarmulevSemyon/go-api-performance-lab/internal/repository"
 
 	_ "net/http/pprof"
 )
